@@ -8,8 +8,10 @@
   <title>Sinh viên</title>
   <link rel="stylesheet" href="../css/bootstrap.css">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous" />
 </head>
 
 <body class="bg-content">
@@ -20,28 +22,36 @@
         <h1 class="E-classe text-start ms-3 ps-1 mt-3 h6 fw-bold">Library</h1>
         <i class="far fa-times h4 me-3 close align-self-end d-md-none"></i>
       </div>
-      <div class="img-admin d-flex flex-column align-items-center text-center gap-2">
-        <img class="rounded-circle" src="../assets/img/img-admin.jpeg" alt="img-admin" height="120" width="120">
+      <div
+        class="img-admin d-flex flex-column align-items-center text-center gap-2">
+        <img class="rounded-circle" src="../assets/img/img-admin.jpeg"
+          alt="img-admin" height="120" width="120">
         <h2 class="h6 fw-bold">
           Minh Quang
         </h2>
         <span class="h7 admin-color">Admin</span>
       </div>
-      <div class=" bg-list d-flex flex-column align-items-center fw-bold gap-2 mt-4 ">
+      <div
+        class=" bg-list d-flex flex-column align-items-center fw-bold gap-2 mt-4 ">
         <ul class="d-flex flex-column list-unstyled">
-          <li class="h7"><a class="nav-link text-dark" href="dashboard.html"><i class="fas fa-home me-2"></i>
+          <li class="h7"><a class="nav-link text-dark" href="dashboard.html"><i
+                class="fas fa-home me-2"></i>
               <span>Trang chủ</span></a></li>
-          <li class="h7"><a class=" nav-link text-dark" href="book.html"><i class="fas fa-book me-2"></i>
+          <li class="h7"><a class=" nav-link text-dark" href="book.html"><i
+                class="fas fa-book me-2"></i>
               <span>Sách</span></a></li>
-          <li class="h7"><a class=" nav-link text-dark" href="student.html"><i class="fas fa-user-graduate me-2"></i>
+          <li class="h7"><a class=" nav-link text-dark" href="student.html"><i
+                class="fas fa-user-graduate me-2"></i>
               <span>Sinh viên</span></a></li>
-          <li class="h7"><a class=" nav-link text-dark" href="loan_slip.html"><i class="fas fa-sticky-note me-2"></i>
+          <li class="h7"><a class=" nav-link text-dark" href="loan_slip.html"><i
+                class="fas fa-sticky-note me-2"></i>
               <span>Phiếu mượn</span></a></li>
-          <li class="h7"><a class=" nav-link text-dark" href="penalty_ticket.html"><i
-                class="far fa-sticky-note me-2"></i>
+          <li class="h7"><a class=" nav-link text-dark"
+              href="penalty_ticket.html"><i class="far fa-sticky-note me-2"></i>
               <span>Phiếu phạt</span></a></li>
 
-          <li class="h7 mt-4"><a class=" nav-link text-dark" href="login.html"><i class="fas fa-sign-out-alt"></i>
+          <li class="h7 mt-4"><a class=" nav-link text-dark"
+              href="login.html"><i class="fas fa-sign-out-alt"></i>
               <span>Đăng xuất</span></a></li>
         </ul>
       </div>
@@ -52,8 +62,10 @@
     <!-- start content page -->
     <div class="container-fluid px-4">
       <!-- start header -->
-      <nav class="navbar container-fluid navbar-light bg-white position-sticky top-0">
-        <div class=""><i class="fal fa-caret-circle-down h5 d-none d-md-block menutoggle fa-rotate-90"></i>
+      <nav
+        class="navbar container-fluid navbar-light bg-white position-sticky top-0">
+        <div class=""><i
+            class="fal fa-caret-circle-down h5 d-none d-md-block menutoggle fa-rotate-90"></i>
           <i class="fas fa-bars h4  d-md-none"></i>
         </div>
         <div class="d-flex align-items-center gap-4">
@@ -65,44 +77,58 @@
       <!-- start student list table -->
       <div class="button-add-student mt-3">
         <div class="d-flex justify-content-between">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAddStudent"
-            data-bs-whatever="@mdo">Thêm sinh viên</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#modalAddStudent" data-bs-whatever="@mdo">Thêm sinh
+            viên</button>
           <form class="d-flex align-items-center">
-            <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+            <input class="form-control me-2" type="search"
+              placeholder="Tìm kiếm" aria-label="Search">
             <i class="fal fa-search position-relative"></i>
           </form>
         </div>
         <!-- Modal add student -->
-        <div class="modal fade" id="modalAddStudent" tabindex="-1" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
+        <div class="modal fade" id="modalAddStudent" tabindex="-1"
+          aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Thêm sinh viên</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="exampleModalLabel">Thêm sinh viên
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <form method="POST" action="" enctype="multipart/form-data">
 
                   <div class="">
-                    <label for="recipient-name" class="col-form-label">Mã SV:</label>
-                    <input type="text" class="form-control" id="recipient-name" name="code">
+                    <label for="recipient-name" class="col-form-label">Mã
+                      SV:</label>
+                    <input type="text" class="form-control" id="recipient-name"
+                      name="code">
                   </div>
                   <div class="">
-                    <label for="recipient-name" class="col-form-label">Họ và tên:</label>
-                    <input type="text" class="form-control" id="recipient-name" name="full_name">
+                    <label for="recipient-name" class="col-form-label">Họ và
+                      tên:</label>
+                    <input type="text" class="form-control" id="recipient-name"
+                      name="full_name">
                   </div>
                   <div class="">
-                    <label for="recipient-name" class="col-form-label">Email:</label>
-                    <input type="text" class="form-control" id="recipient-name" name="email">
+                    <label for="recipient-name"
+                      class="col-form-label">Email:</label>
+                    <input type="text" class="form-control" id="recipient-name"
+                      name="email">
                   </div>
                   <div class="">
-                    <label for="recipient-name" class="col-form-label">Lớp:</label>
-                    <input type="text" class="form-control" id="recipient-name" name="class">
+                    <label for="recipient-name"
+                      class="col-form-label">Lớp:</label>
+                    <input type="text" class="form-control" id="recipient-name"
+                      name="class">
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                    <button type="submit" name="submit" class="btn btn-primary">Thêm</button>
+                    <button type="button" class="btn btn-secondary"
+                      data-bs-dismiss="modal">Đóng</button>
+                    <button type="submit" name="submit"
+                      class="btn btn-primary">Thêm</button>
                   </div>
                 </form>
               </div>
@@ -139,10 +165,12 @@
                 K63CD
               </td>
               <td class="d-md-flex gap-3">
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditStudent"><i
-                    class="far fa-pen" style="color: #00C1FE;"></i></button>
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteStudent"><i
-                    class="far fa-trash" style="color: #00C1FE;"></i></button>
+                <button class="bg-transparent border-0" data-bs-toggle="modal"
+                  data-bs-target="#modalEditStudent"><i class="far fa-pen"
+                    style="color: #00C1FE;"></i></button>
+                <button class="bg-transparent border-0" data-bs-toggle="modal"
+                  data-bs-target="#modalDeleteStudent"><i class="far fa-trash"
+                    style="color: #00C1FE;"></i></button>
               </td>
             </tr>
             <tr class="bg-white align-middle mt-3">
@@ -162,46 +190,59 @@
                 K63CB
               </td>
               <td class="d-md-flex gap-3">
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditStudent"><i
-                    class="far fa-pen" style="color: #00C1FE;"></i></button>
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteStudent"><i
-                    class="far fa-trash" style="color: #00C1FE;"></i></button>
+                <button class="bg-transparent border-0" data-bs-toggle="modal"
+                  data-bs-target="#modalEditStudent"><i class="far fa-pen"
+                    style="color: #00C1FE;"></i></button>
+                <button class="bg-transparent border-0" data-bs-toggle="modal"
+                  data-bs-target="#modalDeleteStudent"><i class="far fa-trash"
+                    style="color: #00C1FE;"></i></button>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
       <!-- Modal edit student -->
-      <div class="modal fade" id="modalEditStudent" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+      <div class="modal fade" id="modalEditStudent" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Sửa sinh viên</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <form method="POST" action="" enctype="multipart/form-data">
 
                 <div class="">
-                  <label for="recipient-name" class="col-form-label">Mã SV:</label>
-                  <input type="text" class="form-control" id="recipient-name" name="code">
+                  <label for="recipient-name" class="col-form-label">Mã
+                    SV:</label>
+                  <input type="text" class="form-control" id="recipient-name"
+                    name="code">
                 </div>
                 <div class="">
-                  <label for="recipient-name" class="col-form-label">Họ và tên:</label>
-                  <input type="text" class="form-control" id="recipient-name" name="full_name">
+                  <label for="recipient-name" class="col-form-label">Họ và
+                    tên:</label>
+                  <input type="text" class="form-control" id="recipient-name"
+                    name="full_name">
                 </div>
                 <div class="">
-                  <label for="recipient-name" class="col-form-label">Email:</label>
-                  <input type="text" class="form-control" id="recipient-name" name="email">
+                  <label for="recipient-name"
+                    class="col-form-label">Email:</label>
+                  <input type="text" class="form-control" id="recipient-name"
+                    name="email">
                 </div>
                 <div class="">
-                  <label for="recipient-name" class="col-form-label">Lớp:</label>
-                  <input type="text" class="form-control" id="recipient-name" name="class">
+                  <label for="recipient-name"
+                    class="col-form-label">Lớp:</label>
+                  <input type="text" class="form-control" id="recipient-name"
+                    name="class">
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                  <button type="submit" name="submit" class="btn btn-primary">Sửa</button>
+                  <button type="button" class="btn btn-secondary"
+                    data-bs-dismiss="modal">Đóng</button>
+                  <button type="submit" name="submit"
+                    class="btn btn-primary">Sửa</button>
                 </div>
               </form>
             </div>
@@ -211,20 +252,23 @@
       <!-- End modal edit student -->
 
       <!-- Modal delete student -->
-      <div class="modal fade" id="modalDeleteStudent" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+      <div class="modal fade" id="modalDeleteStudent" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Xóa sinh viên</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <p>Bạn có chắc chắn muôn xóa sinh viên này không?</p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-              <button type="submit" name="submit" class="btn btn-primary">Có</button>
+              <button type="button" class="btn btn-secondary"
+                data-bs-dismiss="modal">Đóng</button>
+              <button type="submit" name="submit"
+                class="btn btn-primary">Có</button>
             </div>
           </div>
         </div>

@@ -1,1 +1,356 @@
-// Thư viện quốc gia
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Viện</title>
+    <!-- Link tới Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet"
+        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- Start Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Thư viện</a>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                            href="../home.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../noi_quy.html">Nội quy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./phuc_vu.html">Phục vụ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hoạt động</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../gioi_thieu_sach.html">Giới
+                            thiệu sách</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tim_kiem_sach.html">Tìm
+                            kiếm sách</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./muon_sach.html">Đăng ký mượn
+                            sách</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Header -->
+
+    <main class="container my-4" style="padding-bottom: 100px;">
+
+        <div class="row">
+            <div class="col-8">
+                <h2 style="text-align: center; margin-bottom:20px ;">Tìm kiếm
+                    sách
+                </h2>
+                <div
+                    style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+                    <select style="width:200px" class="form-select"
+                        aria-label="Default select example">
+                        <option selected>Thể loại</option>
+                        <option value="1">Thể loại 1</option>
+                        <option value="2">Thể loại 2</option>
+                        <option value="3">Thể loại 3</option>
+                    </select>
+                    <select style="width:200px" class="form-select"
+                        aria-label="Default select example">
+                        <option selected>Năm xuất bản</option>
+                        <option value="1">Năm 1</option>
+                        <option value="2">Năm 2</option>
+                        <option value="3">Năm 3</option>
+                    </select>
+                    <div style="width:300px" class="input-group ">
+                        <input type="text" class="form-control"
+                            aria-label="Sizing example input"
+                            placeholder="Tên sách, tên tác giả...."
+                            aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <button type="button" class="btn btn-primary">Tìm
+                        kiếm</button>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã Sách</th>
+                            <th>Tên Sách</th>
+                            <th>Tác giả</th>
+                            <th>Thể loại</th>
+                            <th>Năm xuất bản</th>
+                            <th>Nhà xuất bản</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>S001</td>
+                            <td>Quyển sách 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Thể loại 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Năm xuất bản 1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>S001</td>
+                            <td>Quyển sách 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Thể loại 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Năm xuất bản 1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>S001</td>
+                            <td>Quyển sách 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Thể loại 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Năm xuất bản 1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>S001</td>
+                            <td>Quyển sách 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Thể loại 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Năm xuất bản 1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>S001</td>
+                            <td>Quyển sách 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Thể loại 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Năm xuất bản 1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>S001</td>
+                            <td>Quyển sách 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Thể loại 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Năm xuất bản 1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>S001</td>
+                            <td>Quyển sách 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Thể loại 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Năm xuất bản 1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>S001</td>
+                            <td>Quyển sách 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Thể loại 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Năm xuất bản 1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>S001</td>
+                            <td>Quyển sách 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Thể loại 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Năm xuất bản 1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>S001</td>
+                            <td>Quyển sách 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Thể loại 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Năm xuất bản 1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>S001</td>
+                            <td>Quyển sách 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Thể loại 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Năm xuất bản 1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>S001</td>
+                            <td>Quyển sách 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Thể loại 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Năm xuất bản 1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>S001</td>
+                            <td>Quyển sách 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Thể loại 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Năm xuất bản 1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>S001</td>
+                            <td>Quyển sách 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Thể loại 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Năm xuất bản 1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>S001</td>
+                            <td>Quyển sách 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Thể loại 1</td>
+                            <td>Tác giả 1</td>
+                            <td>Năm xuất bản 1</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div
+                    style="display: flex; align-items: center; justify-content: center;">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#"
+                                    aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link"
+                                    href="#">1</a></li>
+                            <li class="page-item"><a class="page-link"
+                                    href="#">2</a></li>
+                            <li class="page-item"><a class="page-link"
+                                    href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-4">
+                <div style="margin-left: 20px;" class="head-box"><a
+                        class="video" href="VideoGroup.aspx">Video hoạt động</a>
+                </div>
+                <ul>
+
+
+                    <li class="list-video">
+                        <span>CHÍNH THỨC KHỞI ĐỘNG CUỘC THI ĐẠI SỨ
+                            VĂN HOÁ
+                            ĐỌC THÀNH PHỐ HÀ NỘI LẦN THỨ III</span>
+
+                    </li>
+
+                    <li class="list-video">
+                        <span>HÀ NỘI PHÁT ĐỘNG CUỘC THI ĐẠI SỨ VĂN
+                            HOÁ ĐỌC
+                            LẦN THỨ III - NĂM 2023 VỚI CHỦ ĐỀ “SÁCH: KẾT NỐI
+                            TRI THỨC - KIẾN TẠO TƯƠNG LAI”</span>
+
+                    </li>
+
+                    <li class="list-video">
+                        <span>LỄ PHÁT ĐỘNG CUỘC THI ĐẠI SỨ VĂN HÓA
+                            ĐỌC THÀNH
+                            PHỐ HÀ NỘI LẦN THỨ III, NĂM 2023</span>
+
+                    </li>
+
+                    <li class="list-video">
+                        <span>HỘI THI THIẾU NHI THỦ ĐÔ TUYÊN TRUYỀN,
+                            GIỚI
+                            THIỆU SÁCH NĂM 2023: “TỰ HÀO THĂNG LONG – HÀ NỘI
+                            NGÀN NĂM VĂN HIẾN”</span>
+
+                    </li>
+
+                    <li class="list-video">
+                        <span>LÀM GÌ ĐỂ THƯ VIỆN TRỞ NÊN HẤP
+                            DẪN?</span>
+
+                    </li>
+                    <li class="list-video">
+                        <span>LỄ PHÁT ĐỘNG CUỘC THI ĐẠI SỨ VĂN HÓA
+                            ĐỌC THÀNH
+                            PHỐ HÀ NỘI LẦN THỨ III, NĂM 2023</span>
+
+                    </li>
+                    <li class="list-video">
+                        <span>HÀ NỘI PHÁT ĐỘNG CUỘC THI ĐẠI SỨ VĂN
+                            HOÁ ĐỌC
+                            LẦN THỨ III - NĂM 2023 VỚI CHỦ ĐỀ “SÁCH: KẾT NỐI
+                            TRI THỨC - KIẾN TẠO TƯƠNG LAI”</span>
+
+                    </li>
+                    <li class="list-video">
+                        <span>CHÍNH THỨC KHỞI ĐỘNG CUỘC THI ĐẠI SỨ
+                            VĂN HOÁ
+                            ĐỌC THÀNH PHỐ HÀ NỘI LẦN THỨ</span>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Start Footer -->
+    <footer class="bg-dark text-white py-4 footer">
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <p>THƯ VIỆN QUỐC GIA VIỆT NAM: Địa chỉ: Số 31 – Tràng Thi –
+                        Hoàn Kiếm - Hà Nội, điện thoại:
+                        024-38255397 (tổng đài). E-mail: info@nlv.gov.vn</p>
+                    <p>Website: http://www.nlv.gov.vn</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Link tới Bootstrap JS (nếu cần) -->
+    <script src="../js/script.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
