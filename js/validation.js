@@ -60,6 +60,6 @@ formSignUp.addEventListener('submit', function (e) {
         window.location.href = 'index.html';
     } else if (email === 'admin@gmail.com' && pass === 'admin') {
         window.location.href =
-            'http://127.0.0.1:5500/my_project/pages/dashboard.html';
+            'http://127.0.0.1:5500/my_project/pages/trang_chu.html';
     }
 });

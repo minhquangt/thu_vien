@@ -234,3 +234,8 @@ table tbody {
     cursor: pointer;
     padding: 5px;
 }
+
+.news-item {
+    margin-bottom: 20px;
+    min-height: 200px;
+}

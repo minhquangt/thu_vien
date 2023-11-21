@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phiếu phạt</title>
+  <title>Phiếu mượn</title>
   <link rel="stylesheet" href="../css/bootstrap.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -29,19 +29,18 @@
       </div>
       <div class=" bg-list d-flex flex-column align-items-center fw-bold gap-2 mt-4 ">
         <ul class="d-flex flex-column list-unstyled">
-          <li class="h7"><a class="nav-link text-dark" href="dashboard.html"><i class="fas fa-home me-2"></i>
+          <li class="h7"><a class="nav-link text-dark" href="trang_chu.html"><i class="fas fa-home me-2"></i>
               <span>Trang chủ</span></a></li>
-          <li class="h7"><a class=" nav-link text-dark" href="book.html"><i class="fas fa-book me-2"></i>
+          <li class="h7"><a class=" nav-link text-dark" href="sach.html"><i class="fas fa-book me-2"></i>
               <span>Sách</span></a></li>
-          <li class="h7"><a class=" nav-link text-dark" href="student.html"><i class="fas fa-user-graduate me-2"></i>
+          <li class="h7"><a class=" nav-link text-dark" href="sinh_vien.html"><i class="fas fa-user-graduate me-2"></i>
               <span>Sinh viên</span></a></li>
-          <li class="h7"><a class=" nav-link text-dark" href="loan_slip.html"><i class="fas fa-sticky-note me-2"></i>
+          <li class="h7"><a class=" nav-link text-dark" href="phieu_muon.html"><i class="fas fa-sticky-note me-2"></i>
               <span>Phiếu mượn</span></a></li>
-          <li class="h7"><a class=" nav-link text-dark" href="penalty_ticket.html"><i
-                class="far fa-sticky-note me-2"></i>
+          <li class="h7"><a class=" nav-link text-dark" href="phieu_phat.html"><i class="far fa-sticky-note me-2"></i>
               <span>Phiếu phạt</span></a></li>
 
-          <li class="h7 mt-4"><a class=" nav-link text-dark" href="login.html"><i class="fas fa-sign-out-alt"></i>
+          <li class="h7 mt-4"><a class=" nav-link text-dark" href="dang_nhap.html"><i class="fas fa-sign-out-alt"></i>
               <span>Đăng xuất</span></a></li>
         </ul>
       </div>
@@ -66,7 +65,7 @@
       <div class="button-add-loan-slip mt-3">
         <div class="d-flex justify-content-between">
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAddLoanSlip"
-            data-bs-whatever="@mdo">Thêm phiếu phạt</button>
+            data-bs-whatever="@mdo">Thêm phiếu mượn</button>
           <form class="d-flex align-items-center">
             <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
             <i class="fal fa-search position-relative"></i>
@@ -78,7 +77,7 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Thêm phiếu phạt</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Thêm phiếu mượn</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -92,15 +91,11 @@
                     <input type="text" class="form-control" id="recipient-name" name="full_name">
                   </div>
                   <div class="">
-                    <label for="recipient-name" class="col-form-label">Lí do phạt:</label>
+                    <label for="recipient-name" class="col-form-label">ID sách:</label>
                     <input type="text" class="form-control" id="recipient-name" name="email">
                   </div>
                   <div class="">
-                    <label for="recipient-name" class="col-form-label">Số tiền phạt:</label>
-                    <input type="text" class="form-control" id="recipient-name" name="email">
-                  </div>
-                  <div class="">
-                    <label for="recipient-name" class="col-form-label">Ngày phạt:</label>
+                    <label for="recipient-name" class="col-form-label">Ngày mượn:</label>
                     <input type="text" class="form-control" id="recipient-name" name="class">
                   </div>
                   <div class="modal-footer">
@@ -120,9 +115,8 @@
             <th>STT</th>
             <th>ID</th>
             <th>Mã SV</th>
-            <th>Lí do phạt</th>
-            <th>Số tiền phạt</th>
-            <th>Ngày phạt</th>
+            <th>ID sách</th>
+            <th>Ngày mượn</th>
             <th></th>
           </thead>
           <tbody>
@@ -131,16 +125,13 @@
                 1
               </td>
               <td>
-                11111111
+                12345678
               </td>
               <td>
                 20020123
               </td>
               <td>
-                Làm ồn trong thư viện
-              </td>
-              <td>
-                100000
+                11111111
               </td>
               <td>
                 1/1/2023
@@ -157,16 +148,13 @@
                 2
               </td>
               <td>
-                22222222
+                12345678
               </td>
               <td>
                 20020124
               </td>
               <td>
-                Trễ trả sách
-              </td>
-              <td>
-                200000
+                22222222
               </td>
               <td>
                 1/2/2023
@@ -183,16 +171,13 @@
                 3
               </td>
               <td>
-                11111111
+                12345678
               </td>
               <td>
                 20020123
               </td>
               <td>
-                Làm ồn trong thư viện
-              </td>
-              <td>
-                100000
+                11111111
               </td>
               <td>
                 1/1/2023
@@ -209,16 +194,13 @@
                 4
               </td>
               <td>
-                22222222
+                12345678
               </td>
               <td>
                 20020124
               </td>
               <td>
-                Trễ trả sách
-              </td>
-              <td>
-                200000
+                22222222
               </td>
               <td>
                 1/2/2023
@@ -235,16 +217,13 @@
                 5
               </td>
               <td>
-                11111111
+                12345678
               </td>
               <td>
                 20020123
               </td>
               <td>
-                Làm ồn trong thư viện
-              </td>
-              <td>
-                100000
+                11111111
               </td>
               <td>
                 1/1/2023
@@ -261,16 +240,13 @@
                 6
               </td>
               <td>
-                22222222
+                12345678
               </td>
               <td>
                 20020124
               </td>
               <td>
-                Trễ trả sách
-              </td>
-              <td>
-                200000
+                22222222
               </td>
               <td>
                 1/2/2023
@@ -287,16 +263,13 @@
                 7
               </td>
               <td>
-                11111111
+                12345678
               </td>
               <td>
                 20020123
               </td>
               <td>
-                Làm ồn trong thư viện
-              </td>
-              <td>
-                100000
+                11111111
               </td>
               <td>
                 1/1/2023
@@ -313,16 +286,13 @@
                 8
               </td>
               <td>
-                22222222
+                12345678
               </td>
               <td>
                 20020124
               </td>
               <td>
-                Trễ trả sách
-              </td>
-              <td>
-                200000
+                22222222
               </td>
               <td>
                 1/2/2023
@@ -339,16 +309,13 @@
                 9
               </td>
               <td>
-                11111111
+                12345678
               </td>
               <td>
                 20020123
               </td>
               <td>
-                Làm ồn trong thư viện
-              </td>
-              <td>
-                100000
+                11111111
               </td>
               <td>
                 1/1/2023
@@ -365,16 +332,13 @@
                 10
               </td>
               <td>
-                22222222
+                12345678
               </td>
               <td>
                 20020124
               </td>
               <td>
-                Trễ trả sách
-              </td>
-              <td>
-                200000
+                22222222
               </td>
               <td>
                 1/2/2023
@@ -412,7 +376,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Sửa phiếu phạt</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Sửa phiếu mượn</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -426,20 +390,16 @@
                   <input type="text" class="form-control" id="recipient-name" name="full_name">
                 </div>
                 <div class="">
-                  <label for="recipient-name" class="col-form-label">Lí do phạt:</label>
+                  <label for="recipient-name" class="col-form-label">ID sách:</label>
                   <input type="text" class="form-control" id="recipient-name" name="email">
                 </div>
                 <div class="">
-                  <label for="recipient-name" class="col-form-label">Số tiền phạt:</label>
-                  <input type="text" class="form-control" id="recipient-name" name="email">
-                </div>
-                <div class="">
-                  <label for="recipient-name" class="col-form-label">Ngày phạt:</label>
+                  <label for="recipient-name" class="col-form-label">Ngày mượn:</label>
                   <input type="text" class="form-control" id="recipient-name" name="class">
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                  <button type="submit" name="submit" class="btn btn-primary">Thêm</button>
+                  <button type="submit" name="submit" class="btn btn-primary">Sửa</button>
                 </div>
               </form>
             </div>
@@ -454,11 +414,11 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Xóa phiếu phạt</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Xóa phiếu mượn</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <p>Bạn có chắc chắn muôn xóa phiếu phạt này không?</p>
+              <p>Bạn có chắc chắn muôn xóa phiếu mượn này không?</p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>

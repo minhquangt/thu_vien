@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book</title>
+  <title>Phiếu phạt</title>
   <link rel="stylesheet" href="../css/bootstrap.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -29,19 +29,18 @@
       </div>
       <div class=" bg-list d-flex flex-column align-items-center fw-bold gap-2 mt-4 ">
         <ul class="d-flex flex-column list-unstyled">
-          <li class="h7"><a class="nav-link text-dark" href="dashboard.html"><i class="fas fa-home me-2"></i>
+          <li class="h7"><a class="nav-link text-dark" href="trang_chu.html"><i class="fas fa-home me-2"></i>
               <span>Trang chủ</span></a></li>
-          <li class="h7"><a class=" nav-link text-dark" href="book.html"><i class="fas fa-book me-2"></i>
+          <li class="h7"><a class=" nav-link text-dark" href="sach.html"><i class="fas fa-book me-2"></i>
               <span>Sách</span></a></li>
-          <li class="h7"><a class=" nav-link text-dark" href="student.html"><i class="fas fa-user-graduate me-2"></i>
+          <li class="h7"><a class=" nav-link text-dark" href="sinh_vien.html"><i class="fas fa-user-graduate me-2"></i>
               <span>Sinh viên</span></a></li>
-          <li class="h7"><a class=" nav-link text-dark" href="loan_slip.html"><i class="fas fa-sticky-note me-2"></i>
+          <li class="h7"><a class=" nav-link text-dark" href="phieu_muon.html"><i class="fas fa-sticky-note me-2"></i>
               <span>Phiếu mượn</span></a></li>
-          <li class="h7"><a class=" nav-link text-dark" href="penalty_ticket.html"><i
-                class="far fa-sticky-note me-2"></i>
+          <li class="h7"><a class=" nav-link text-dark" href="phieu_phat.html"><i class="far fa-sticky-note me-2"></i>
               <span>Phiếu phạt</span></a></li>
 
-          <li class="h7 mt-4"><a class=" nav-link text-dark" href="login.html"><i class="fas fa-sign-out-alt"></i>
+          <li class="h7 mt-4"><a class=" nav-link text-dark" href="dang_nhap.html"><i class="fas fa-sign-out-alt"></i>
               <span>Đăng xuất</span></a></li>
         </ul>
       </div>
@@ -62,22 +61,23 @@
       </nav>
       <!-- end header -->
 
-      <!-- start book list table -->
-      <div class="button-add-book mt-3">
+      <!-- start loan-slip list table -->
+      <div class="button-add-loan-slip mt-3">
         <div class="d-flex justify-content-between">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAddBook"
-            data-bs-whatever="@mdo">Thêm sách</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAddLoanSlip"
+            data-bs-whatever="@mdo">Thêm phiếu phạt</button>
           <form class="d-flex align-items-center">
             <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
             <i class="fal fa-search position-relative"></i>
           </form>
         </div>
-        <!-- Modal add book -->
-        <div class="modal fade" id="modalAddBook" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- Modal add loan-slip -->
+        <div class="modal fade" id="modalAddLoanSlip" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Thêm sách</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Thêm phiếu phạt</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -87,20 +87,20 @@
                     <input type="text" class="form-control" id="recipient-name" name="code">
                   </div>
                   <div class="">
-                    <label for="recipient-name" class="col-form-label">Tên sách:</label>
+                    <label for="recipient-name" class="col-form-label">Mã SV:</label>
                     <input type="text" class="form-control" id="recipient-name" name="full_name">
                   </div>
                   <div class="">
-                    <label for="recipient-name" class="col-form-label">Tác giả:</label>
+                    <label for="recipient-name" class="col-form-label">Lí do phạt:</label>
                     <input type="text" class="form-control" id="recipient-name" name="email">
                   </div>
                   <div class="">
-                    <label for="recipient-name" class="col-form-label">Năm xuất bản:</label>
-                    <input type="text" class="form-control" id="recipient-name" name="class">
+                    <label for="recipient-name" class="col-form-label">Số tiền phạt:</label>
+                    <input type="text" class="form-control" id="recipient-name" name="email">
                   </div>
                   <div class="">
-                    <label for="recipient-name" class="col-form-label">Số lượng:</label>
-                    <input type="number" class="form-control" id="recipient-name" name="class">
+                    <label for="recipient-name" class="col-form-label">Ngày phạt:</label>
+                    <input type="text" class="form-control" id="recipient-name" name="class">
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
@@ -111,17 +111,17 @@
             </div>
           </div>
         </div>
-        <!-- End modal add book -->
+        <!-- End modal add loan-slip -->
       </div>
       <div class="courses">
         <table class="table table-responsive table-primary table-striped">
           <thead>
             <th>STT</th>
             <th>ID</th>
-            <th>Tên sách</th>
-            <th>Tác giả</th>
-            <th>Năm xuất bản</th>
-            <th>Số lượng</th>
+            <th>Mã SV</th>
+            <th>Lí do phạt</th>
+            <th>Số tiền phạt</th>
+            <th>Ngày phạt</th>
             <th></th>
           </thead>
           <tbody>
@@ -130,24 +130,24 @@
                 1
               </td>
               <td>
-                12345678
+                11111111
               </td>
               <td>
-                Những Ngày Cuối
+                20020123
               </td>
               <td>
-                James Smith
+                Làm ồn trong thư viện
               </td>
               <td>
-                2018
+                100000
               </td>
               <td>
-                20
+                1/1/2023
               </td>
               <td class="d-md-flex gap-3">
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditBook"><i
+                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditLoanSlip"><i
                     class="far fa-pen" style="color: #00C1FE;"></i></button>
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBook"><i
+                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteLoanSlip"><i
                     class="far fa-trash" style="color: #00C1FE;"></i></button>
               </td>
             </tr>
@@ -156,24 +156,24 @@
                 2
               </td>
               <td>
-                20010987
+                22222222
               </td>
               <td>
-                Đi Tìm Ý Chí
+                20020124
               </td>
               <td>
-                David Brown
+                Trễ trả sách
               </td>
               <td>
-                2019
+                200000
               </td>
               <td>
-                30
+                1/2/2023
               </td>
               <td class="d-md-flex gap-3">
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditBook"><i
+                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditLoanSlip"><i
                     class="far fa-pen" style="color: #00C1FE;"></i></button>
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBook"><i
+                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteLoanSlip"><i
                     class="far fa-trash" style="color: #00C1FE;"></i></button>
               </td>
             </tr>
@@ -182,24 +182,24 @@
                 3
               </td>
               <td>
-                12345678
+                11111111
               </td>
               <td>
-                Những Ngày Cuối
+                20020123
               </td>
               <td>
-                James Smith
+                Làm ồn trong thư viện
               </td>
               <td>
-                2018
+                100000
               </td>
               <td>
-                20
+                1/1/2023
               </td>
               <td class="d-md-flex gap-3">
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditBook"><i
+                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditLoanSlip"><i
                     class="far fa-pen" style="color: #00C1FE;"></i></button>
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBook"><i
+                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteLoanSlip"><i
                     class="far fa-trash" style="color: #00C1FE;"></i></button>
               </td>
             </tr>
@@ -208,24 +208,24 @@
                 4
               </td>
               <td>
-                20010987
+                22222222
               </td>
               <td>
-                Đi Tìm Ý Chí
+                20020124
               </td>
               <td>
-                David Brown
+                Trễ trả sách
               </td>
               <td>
-                2019
+                200000
               </td>
               <td>
-                30
+                1/2/2023
               </td>
               <td class="d-md-flex gap-3">
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditBook"><i
+                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditLoanSlip"><i
                     class="far fa-pen" style="color: #00C1FE;"></i></button>
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBook"><i
+                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteLoanSlip"><i
                     class="far fa-trash" style="color: #00C1FE;"></i></button>
               </td>
             </tr>
@@ -234,24 +234,24 @@
                 5
               </td>
               <td>
-                12345678
+                11111111
               </td>
               <td>
-                Những Ngày Cuối
+                20020123
               </td>
               <td>
-                James Smith
+                Làm ồn trong thư viện
               </td>
               <td>
-                2018
+                100000
               </td>
               <td>
-                20
+                1/1/2023
               </td>
               <td class="d-md-flex gap-3">
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditBook"><i
+                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditLoanSlip"><i
                     class="far fa-pen" style="color: #00C1FE;"></i></button>
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBook"><i
+                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteLoanSlip"><i
                     class="far fa-trash" style="color: #00C1FE;"></i></button>
               </td>
             </tr>
@@ -260,24 +260,24 @@
                 6
               </td>
               <td>
-                20010987
+                22222222
               </td>
               <td>
-                Đi Tìm Ý Chí
+                20020124
               </td>
               <td>
-                David Brown
+                Trễ trả sách
               </td>
               <td>
-                2019
+                200000
               </td>
               <td>
-                30
+                1/2/2023
               </td>
               <td class="d-md-flex gap-3">
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditBook"><i
+                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditLoanSlip"><i
                     class="far fa-pen" style="color: #00C1FE;"></i></button>
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBook"><i
+                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteLoanSlip"><i
                     class="far fa-trash" style="color: #00C1FE;"></i></button>
               </td>
             </tr>
@@ -286,24 +286,24 @@
                 7
               </td>
               <td>
-                12345678
+                11111111
               </td>
               <td>
-                Những Ngày Cuối
+                20020123
               </td>
               <td>
-                James Smith
+                Làm ồn trong thư viện
               </td>
               <td>
-                2018
+                100000
               </td>
               <td>
-                20
+                1/1/2023
               </td>
               <td class="d-md-flex gap-3">
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditBook"><i
+                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditLoanSlip"><i
                     class="far fa-pen" style="color: #00C1FE;"></i></button>
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBook"><i
+                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteLoanSlip"><i
                     class="far fa-trash" style="color: #00C1FE;"></i></button>
               </td>
             </tr>
@@ -312,24 +312,24 @@
                 8
               </td>
               <td>
-                20010987
+                22222222
               </td>
               <td>
-                Đi Tìm Ý Chí
+                20020124
               </td>
               <td>
-                David Brown
+                Trễ trả sách
               </td>
               <td>
-                2019
+                200000
               </td>
               <td>
-                30
+                1/2/2023
               </td>
               <td class="d-md-flex gap-3">
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditBook"><i
+                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditLoanSlip"><i
                     class="far fa-pen" style="color: #00C1FE;"></i></button>
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBook"><i
+                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteLoanSlip"><i
                     class="far fa-trash" style="color: #00C1FE;"></i></button>
               </td>
             </tr>
@@ -338,24 +338,24 @@
                 9
               </td>
               <td>
-                12345678
+                11111111
               </td>
               <td>
-                Những Ngày Cuối
+                20020123
               </td>
               <td>
-                James Smith
+                Làm ồn trong thư viện
               </td>
               <td>
-                2018
+                100000
               </td>
               <td>
-                20
+                1/1/2023
               </td>
               <td class="d-md-flex gap-3">
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditBook"><i
+                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditLoanSlip"><i
                     class="far fa-pen" style="color: #00C1FE;"></i></button>
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBook"><i
+                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteLoanSlip"><i
                     class="far fa-trash" style="color: #00C1FE;"></i></button>
               </td>
             </tr>
@@ -364,24 +364,24 @@
                 10
               </td>
               <td>
-                20010987
+                22222222
               </td>
               <td>
-                Đi Tìm Ý Chí
+                20020124
               </td>
               <td>
-                David Brown
+                Trễ trả sách
               </td>
               <td>
-                2019
+                200000
               </td>
               <td>
-                30
+                1/2/2023
               </td>
               <td class="d-md-flex gap-3">
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditBook"><i
+                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalEditLoanSlip"><i
                     class="far fa-pen" style="color: #00C1FE;"></i></button>
-                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteBook"><i
+                <button class="bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalDeleteLoanSlip"><i
                     class="far fa-trash" style="color: #00C1FE;"></i></button>
               </td>
             </tr>
@@ -405,12 +405,13 @@
           </ul>
         </nav>
       </div>
-      <!-- Modal edit book -->
-      <div class="modal fade" id="modalEditBook" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- Modal edit loan-slip -->
+      <div class="modal fade" id="modalEditLoanSlip" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Sửa sách</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Sửa phiếu phạt</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -420,42 +421,43 @@
                   <input type="text" class="form-control" id="recipient-name" name="code">
                 </div>
                 <div class="">
-                  <label for="recipient-name" class="col-form-label">Tên sách:</label>
+                  <label for="recipient-name" class="col-form-label">Mã SV:</label>
                   <input type="text" class="form-control" id="recipient-name" name="full_name">
                 </div>
                 <div class="">
-                  <label for="recipient-name" class="col-form-label">Tác giả:</label>
+                  <label for="recipient-name" class="col-form-label">Lí do phạt:</label>
                   <input type="text" class="form-control" id="recipient-name" name="email">
                 </div>
                 <div class="">
-                  <label for="recipient-name" class="col-form-label">Năm xuất bản:</label>
-                  <input type="text" class="form-control" id="recipient-name" name="class">
+                  <label for="recipient-name" class="col-form-label">Số tiền phạt:</label>
+                  <input type="text" class="form-control" id="recipient-name" name="email">
                 </div>
                 <div class="">
-                  <label for="recipient-name" class="col-form-label">Số lượng:</label>
-                  <input type="number" class="form-control" id="recipient-name" name="class">
+                  <label for="recipient-name" class="col-form-label">Ngày phạt:</label>
+                  <input type="text" class="form-control" id="recipient-name" name="class">
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                  <button type="submit" name="submit" class="btn btn-primary">Sửa</button>
+                  <button type="submit" name="submit" class="btn btn-primary">Thêm</button>
                 </div>
               </form>
             </div>
           </div>
         </div>
       </div>
-      <!-- End modal edit book -->
+      <!-- End modal edit loan-slip -->
 
-      <!-- Modal delete book -->
-      <div class="modal fade" id="modalDeleteBook" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- Modal delete loan-slip -->
+      <div class="modal fade" id="modalDeleteLoanSlip" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Xóa sách</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Xóa phiếu phạt</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <p>Bạn có chắc chắn muôn xóa sách này không?</p>
+              <p>Bạn có chắc chắn muôn xóa phiếu phạt này không?</p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
@@ -464,7 +466,7 @@
           </div>
         </div>
       </div>
-      <!-- End modal delete book -->
+      <!-- End modal delete loan-slip -->
 
     </div>
 
